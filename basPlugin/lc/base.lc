@@ -1,0 +1,6 @@
+ eclipse configuration BasApp {
+    plugin basPlugin;
+    
+    application	 basPlugin.myApp;
+    vm-argument '-DmyArg=bas'; 
+}

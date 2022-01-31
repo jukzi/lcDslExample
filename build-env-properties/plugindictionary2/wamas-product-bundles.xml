@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dictionary>
+    <categories>
+        <category id="Build-IDE" title="Build (IDE)">
+            <workingSet id="Build-IDE"/>
+        </category>
+        <category id="IDE" title="Eclipse IDE Plug-ins">
+            <dependency on="Build-IDE"/>
+            <workingSet id="IDE Common"/>
+            <workingSet id="IDE Views"/>
+            <workingSet id="IDE WPoB"/>
+            <workingSet id="IDE Xtext"/>
+        </category>
+        <category id="IDE-TEA" title="Eclipse IDE Plug-ins - TEA">
+            <workingSet id="IDE TEA"/>
+            <workingSet id="IDE TEA Features"/>
+            <workingSet id="IDE TEA Samples"/>
+            <workingSet id="IDE TEA Scripting"/>
+        </category>
+		<category id="IDE-BDeploy" title="Eclipse IDE Plug-ins - BDeploy">
+        	<workingSet id="IDE BDeploy"/>
+        </category>
+    </categories>
+    <plugins>
+        <!--Build-IDE-->
+        <plugin id="build-env-properties" workingSet="Build-IDE"/>
+        <plugin id="launch-config-ide" workingSet="Build-IDE"/>
+        <!--IDE Common-->
+        <plugin id="com.wamas.ide.logging" workingSet="IDE Common"/>
+        <plugin id="com.wamas.ide.archchecker" workingSet="IDE Common"/>
+        <plugin id="com.wamas.ide.core" workingSet="IDE Common"/>
+        <plugin id="com.wamas.ide.doc" workingSet="IDE Common"/>
+        <plugin id="com.wamas.ide.documentation" workingSet="IDE Common"/>
+        <plugin id="com.wamas.ide.git_feature" workingSet="IDE Common"/>
+        <plugin id="com.wamas.ide.gui.swtbot" workingSet="IDE Common"/>
+        <plugin id="com.wamas.ide.mechanic" workingSet="IDE Common"/>
+        <plugin id="com.wamas.platform.databaseconfig" source="wamas" workingSet="IDE Common"/>
+        <!--IDE TEA-->
+        <plugin id="org.eclipse.tea.core" source="tea" workingSet="IDE TEA"/>
+        <plugin id="org.eclipse.tea.core.ui" source="tea" workingSet="IDE TEA"/>
+        <plugin id="org.eclipse.tea.core.ui.live" source="tea" workingSet="IDE TEA"/>
+        <plugin id="org.eclipse.tea.library.build" source="tea" workingSet="IDE TEA"/>
+        <plugin id="org.eclipse.tea.library.build.lcdsl" source="tea" workingSet="IDE TEA"/>
+        <!--IDE TEA Features-->
+        <plugin id="org.eclipse.tea.core_feature" source="tea" workingSet="IDE TEA Features"/>
+        <plugin id="org.eclipse.tea.lcdsl.library_feature" source="tea" workingSet="IDE TEA Features"/>
+        <plugin id="org.eclipse.tea.library_feature" source="tea" workingSet="IDE TEA Features"/>
+        <plugin id="org.eclipse.tea.scripting_feature" source="tea" workingSet="IDE TEA Features"/>
+        <plugin id="org.eclipse.tea.ui_feature" source="tea" workingSet="IDE TEA Features"/>
+        <!--IDE TEA Samples-->
+        <plugin id="org.eclipse.tea.samples" source="tea" workingSet="IDE TEA Samples"/>
+        <!--IDE TEA Scripting-->
+        <plugin id="org.eclipse.tea.ease" source="tea" workingSet="IDE TEA Scripting"/>
+        <!--IDE Views-->
+        <plugin id="com.wamas.ide.datastageview" workingSet="IDE Views"/>
+        <plugin id="com.wamas.ide.junit4.view" workingSet="IDE Views"/>
+        <plugin id="com.wamas.ide.layoutViewer" workingSet="IDE Views"/>
+        <plugin id="com.wamas.ide.mobile.layoutViewer" workingSet="IDE Views"/>
+        <plugin id="com.wamas.ide.documentpreview" workingSet="IDE Views"/>
+        <plugin id="com.wamas.ide.model.view" workingSet="IDE Views"/>
+        <!--IDE WPoB-->
+        <plugin id="com.wamas.ide.bdeploy" workingSet="IDE WPoB"/>
+        <plugin id="com.wamas.ide.git" workingSet="IDE WPoB"/>
+        <plugin id="com.wamas.ide.git.ui" workingSet="IDE WPoB"/>
+        <plugin id="com.wamas.ide.menu" workingSet="IDE WPoB"/>
+        <plugin id="com.wamas.ide.tea.core" workingSet="IDE WPoB"/>
+        <plugin id="com.wamas.ide.wpob.builder" workingSet="IDE WPoB"/>
+        <plugin id="com.wamas.ide.wpob.ui" workingSet="IDE WPoB"/>
+        <plugin id="com.wamas.ide.target_platform" workingSet="IDE WPoB"/>
+        <!--IDE Xtext-->
+        <plugin id="com.wamas.ide.wdl.tests" workingSet="IDE Xtext"/>
+        <plugin id="com.wamas.ide.wdl.ui" workingSet="IDE Xtext"/>
+        <plugin id="com.wamas.ide.wml" workingSet="IDE Xtext"/>
+        <plugin id="com.wamas.ide.wml.ide" workingSet="IDE Xtext"/>
+        <plugin id="com.wamas.ide.wml.tests" workingSet="IDE Xtext"/>
+        <plugin id="com.wamas.ide.wml.ui" workingSet="IDE Xtext"/>
+        <plugin id="com.wamas.ide.wml.ui.tests" workingSet="IDE Xtext"/>
+        <plugin id="com.wamas.ide.wpl" workingSet="IDE Xtext"/>
+        <plugin id="com.wamas.ide.wpl.tests" workingSet="IDE Xtext"/>
+        <plugin id="com.wamas.ide.wpl.ui" workingSet="IDE Xtext"/>
+        <plugin id="com.wamas.platform.wdl" source="wamas" workingSet="IDE Xtext"/>
+        <!-- IDE BDeploy -->
+        <plugin id="io.bdeploy.tea.plugin" source="bdeploy" workingSet="IDE BDeploy"/>
+        <plugin id="io.bdeploy.tea.feature" source="bdeploy" workingSet="IDE BDeploy"/>
+    </plugins>
+</dictionary>
